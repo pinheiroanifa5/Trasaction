@@ -4,7 +4,7 @@ public class ExemploJDBC {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/my_sql";
         String usuario = "root";
-        String senha = "scutyany";
+        String senha = "";
 
         try (Connection conexao = DriverManager.getConnection(url, usuario, senha)) {
             String sql = "SELECT * FROM clientes";
