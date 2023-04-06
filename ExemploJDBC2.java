@@ -6,7 +6,7 @@ public class ExemploJDBC2  {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/my_sql";
         String usuario = "root";
-        String senha = "scutyany";
+        String senha = "";
 
         try (Connection conexao = DriverManager.getConnection(url, usuario, senha)) {
             conexao.setAutoCommit(false); // Desativa o modo autocommit
